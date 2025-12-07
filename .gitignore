@@ -1,0 +1,76 @@
+# ======================================
+# Python / Django
+# ======================================
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.pid
+*.log
+*.pot
+*.mo
+
+# Django stuff
+db.sqlite3
+local_settings.py
+settings_local.py
+
+# Static
+staticfiles/
+static/
+
+
+# ======================================
+# Virtual environments
+# ======================================
+venv/
+env/
+.venv/
+
+
+# ======================================
+# ML models & outputs
+# (keep only important pkl files you need for inference)
+# ======================================
+ml/output/models/*.joblib
+ml/output/models/*.pkl
+ml/output/models/*.sav
+ml/output/plots/*.png
+ml/output/plots/*.pdf
+ml/output/plots/*.jpg
+
+# Keep metrics.json (because dashboard needs it)
+!ml/output/plots/metrics.json
+
+
+# ======================================
+# Large datasets
+# ======================================
+data/
+datasets/
+*.csv
+*.parquet
+
+
+# BUT keep model_training_dataset if required
+!ml/output/data/model_training_dataset.csv
+
+
+# ======================================
+# Node / React
+# ======================================
+node_modules/
+build/
+dist/
+.env
+.env.local
+.env.production
+
+
+# ======================================
+# IDE / OS
+# ======================================
+.idea/
+.vscode/
+.DS_Store
+*.swp
+Thumbs.db

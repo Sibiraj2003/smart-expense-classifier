@@ -1,0 +1,16 @@
+Flask
+pandas
+numpy
+scikit-learn
+plotly
+joblib
+gunicorn
+python-dateutil
+matplotlib
+seaborn
+pyarrow
+fastparquet
+catboost
+imblearn
+django
+djangorestframework

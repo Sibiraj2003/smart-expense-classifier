@@ -1,0 +1,17 @@
+Amount
+Amount_log
+Day
+Month
+Year
+Weekday
+Is_Weekend
+Quarter
+Days_Since_First
+City_Freq
+Card Type_Freq
+Month_sin
+Month_cos
+Day_sin
+Day_cos
+Weekday_sin
+Weekday_cos
