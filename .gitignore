@@ -39,11 +39,8 @@ ml/output/plots/*.pdf
 ml/output/plots/*.jpg
 
 # ML outputs
-ml/output/models/*
 ml/output/plots/*
 data/*
-*.csv
-*.pkl
 
 # keep these directories visible
 !ml/
