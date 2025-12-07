@@ -1,11 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from "axios";
-
-
-
 
 function App() {
   const [amount, setAmount] = useState("");
@@ -14,17 +10,22 @@ function App() {
   const [year, setYear] = useState("");
   const [result, setResult] = useState(null);
 
+  const API_BASE = process.env.REACT_APP_API_URL; // <-- backend URL here
+
   const predict = async () => {
     try {
-      const response = await axios.post("http://127.0.0.1:8000/api/predict/", {
-        Amount: Number(amount),
-        Month: Number(month),
-        Day: Number(day),
-        Year: Number(year)
-      });
+      const response = await axios.post(
+        `${API_BASE}/api/predict/`,
+        {
+          Amount: Number(amount),
+          Month: Number(month),
+          Day: Number(day),
+          Year: Number(year)
+        }
+      );
       setResult(response.data.prediction);
     } catch (err) {
-      console.error(err);
+      console.error("Prediction error:", err);
     }
   };
 
@@ -59,10 +60,12 @@ function App() {
         <button className="btn btn-primary w-100" onClick={predict}>
           🔍 Predict
         </button>
-        <br></br>
+
+        <br />
+
         <div className="btn btn-secondary me-2">
           <a 
-            href="http://127.0.0.1:8000/api/dashboard" 
+            href={`${API_BASE}/api/dashboard`} 
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-outline-info"
@@ -70,6 +73,7 @@ function App() {
             📊 Open Dashboard
           </a>
         </div>
+
         {result && (
           <div className="mt-4 alert fade show text-center fs-4">
             Predicted Category:
