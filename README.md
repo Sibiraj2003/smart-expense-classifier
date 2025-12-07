@@ -1,4 +1,4 @@
-Smart Expense Classifier
+Smart Expense Classifier - Frontend - https://smart-expense-classifier-pi.vercel.app/ Backend - https://smart-expense-backend-4t26.onrender.com/api/dashboard/
 
 AI + Machine Learning expense classification with real-time analytics dashboard
 
