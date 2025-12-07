@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-4$9aza%ba5mgsd5^ql3f^8g+(ob9wh&zx$z$cg7x1x$8#4pl$j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*", ".onrender.com"]
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
