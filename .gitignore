@@ -31,8 +31,6 @@ env/
 # ML models & outputs
 # (keep only important pkl files you need for inference)
 # ======================================
-ml/output/models/*.joblib
-ml/output/models/*.pkl
 ml/output/models/*.sav
 ml/output/plots/*.png
 ml/output/plots/*.pdf
