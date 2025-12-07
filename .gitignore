@@ -39,6 +39,7 @@ ml/output/plots/*.pdf
 ml/output/plots/*.jpg
 
 # Keep metrics.json (because dashboard needs it)
+!ml/output/models/model_refined.pkl
 !ml/output/plots/metrics.json
 
 
@@ -52,7 +53,7 @@ datasets/
 
 
 # BUT keep model_training_dataset if required
-!ml/output/data/model_training_dataset.csv
+!data/model_training_dataset.csv
 
 
 # ======================================
