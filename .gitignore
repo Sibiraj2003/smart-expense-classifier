@@ -38,22 +38,25 @@ ml/output/plots/*.png
 ml/output/plots/*.pdf
 ml/output/plots/*.jpg
 
-# Keep metrics.json (because dashboard needs it)
+# ML outputs
+ml/output/models/*
+ml/output/plots/*
+data/*
+*.csv
+*.pkl
+
+# keep these directories visible
+!ml/
+!ml/output/
+!ml/output/models/
+!ml/output/plots/
+!data/
+
+# unignore specific critical files
 !ml/output/models/model_refined.pkl
 !ml/output/plots/metrics.json
-
-
-# ======================================
-# Large datasets
-# ======================================
-data/
-datasets/
-*.csv
-*.parquet
-
-
-# BUT keep model_training_dataset if required
 !data/model_training_dataset.csv
+
 
 
 # ======================================
