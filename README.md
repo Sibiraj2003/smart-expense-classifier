@@ -183,18 +183,21 @@ SQL database integration
 
 📸 Screenshots
 
-(LATER>>>...)
+### React Form
+![React Form](screenshots/react_form.png)
 
-![dashboard screenshot]()
-![react form]()
+### Dashboard
+![Dashboard](screenshots/dashboard_overview.png)
 
-🤝 Contributing
+### Recall per Class
+![Recall Chart](screenshots/expense_recall.png)
 
-Pull requests are welcome.
+### Confusion Matrix
+![Prediction](screenshots/confusion.png)
 
 🧑‍💻 Author
 
-Sibiraj
+Sibiraj S
 
 AI & ML enthusiast
 
