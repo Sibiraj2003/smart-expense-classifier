@@ -14,7 +14,7 @@ db.sqlite3
 local_settings.py
 settings_local.py
 
-
+staticfiles/
 
 
 # ======================================
@@ -36,7 +36,8 @@ ml/output/plots/*.jpg
 
 # ML outputs
 ml/output/plots/*
-data/*
+data/model_training_dataset_old.csv
+copies/*
 
 # keep these directories visible
 !ml/
@@ -48,7 +49,6 @@ data/*
 # unignore specific critical files
 !ml/output/models/model_refined.pkl
 !ml/output/plots/metrics.json
-!data/model_training_dataset.csv
 
 
 
